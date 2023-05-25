@@ -9,7 +9,7 @@ class Main {
 
   async Decompress() {
     const start = new Date().getTime()
-    const data = await fs.readFile("MultiTool.7zbson")
+    const data = await fs.readFile("")
     const inStream = new Stream(new Uint8Array(data))
 
     let numArray = new Uint8Array(5);
