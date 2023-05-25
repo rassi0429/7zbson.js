@@ -1,1 +1,2 @@
-# JS_7ZBSON_example
+# 7zbson.js
+
