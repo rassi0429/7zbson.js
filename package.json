@@ -13,9 +13,11 @@
   },
   "author": "rassi0429",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^20.2.3",
-    "bson": "^5.3.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "bson": "^5.3.0"
   }
 }
