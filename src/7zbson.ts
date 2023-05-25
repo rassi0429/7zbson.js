@@ -1,14 +1,14 @@
 import {Stream} from "./Stream";
 import {LZMADecoder} from "./LZMADecoder";
 import {BinaryReader} from "./BinaryReader";
-import {BSON, EJSON} from "bson";
+import {BSON, EJSON, Document} from "bson";
 
 export function Decompress(binary: Uint8Array): string | null {
     const bson = DecompressToBson(binary);
     return EJSON.stringify(bson);
 }
 
-export function DecompressToBson(binary: Uint8Array): any {
+export function DecompressToBson(binary: Uint8Array): Document {
     const inStream = new Stream(binary);
     let numArray = new Uint8Array(5);
     if (inStream.Read3(numArray, 0, 5) != 5)

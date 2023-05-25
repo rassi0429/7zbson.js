@@ -1,15 +1,17 @@
 {
-  "name": "js_7zbson_example",
+  "name": "7zbson.js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Library to convert 7zbson to json",
+  "main": "build/7zbson.js",
+  "repository": "https://github.com/rassi0429/7zbson.js",
   "scripts": {
+    "prepare": "tsc",
     "start": "node build/main.js",
     "build": "tsc",
     "dev": "tsc -w"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "rassi0429",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^20.2.3",
     "bson": "^5.3.0",
