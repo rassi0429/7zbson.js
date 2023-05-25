@@ -1,0 +1,4 @@
+# Ignore ide configuration
+.idea
+.vscode
+.vs
