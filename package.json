@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Library to convert 7zbson to json",
   "main": "build/7zbson.js",
+  "types": "library.d.ts",
   "repository": "https://github.com/rassi0429/7zbson.js",
   "scripts": {
     "prepare": "tsc",
