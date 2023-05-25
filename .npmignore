@@ -4,3 +4,4 @@
 .vs
 # ignore the typescript files as node should not need them when installed via npm
 src
+tsconfig.json
