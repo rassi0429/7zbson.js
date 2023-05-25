@@ -1,6 +1,6 @@
 {
   "name": "7zbson.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library to convert 7zbson to json",
   "main": "build/7zbson.js",
   "types": "library.d.ts",
