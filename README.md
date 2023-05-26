@@ -11,7 +11,7 @@ import fs from "fs/promises";
 
 const data = fs.readFile("file.7zbson");
 const biteArray = new Uint8Array(data);
-const decompress = new Decompress(biteArray);
+const decompress = Decompress(biteArray);
 
 console.log(decompress);
 ```
