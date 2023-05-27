@@ -49,4 +49,24 @@ export class Stream {
       this._buffer[this._position++] = buffer[offset + i];
     }
   }
+
+  WriteByte(value: number): void {
+    this._buffer[this._position++] = value;
+  }
+
+  WriteLongLong(value: number): void {
+    this._buffer[this._position++] = value & 0xff;
+    this._buffer[this._position++] = (value >>> 8) & 0xff;
+    this._buffer[this._position++] = (value >>> 16) & 0xff;
+    this._buffer[this._position++] = (value >>> 24) & 0xff;
+    this._buffer[this._position++] = 0x0;
+    this._buffer[this._position++] = 0x0;
+    this._buffer[this._position++] = 0x0;
+    this._buffer[this._position++] = 0x0;
+  }
+
+  Flush(): void {
+    // Do nothing
+    // tabun iranai
+  }
 }

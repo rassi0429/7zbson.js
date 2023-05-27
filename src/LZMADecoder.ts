@@ -281,7 +281,7 @@ export class LZMADecoder {
   }
 }
 
-class State {
+export class State {
   Index: number = 0;
 
   Init: () => void = () => {
