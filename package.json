@@ -1,6 +1,6 @@
 {
   "name": "7zbson.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library to convert 7zbson to json",
   "main": "build/7zbson.js",
   "types": "library.d.ts",
@@ -17,6 +17,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "bson": "^5.3.0"
+    "bson-fork": "^6.1.1"
   }
 }

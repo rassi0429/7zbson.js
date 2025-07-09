@@ -3,7 +3,7 @@ import {Decoder} from "./RangeCoder";
 import {LZMADecoder} from "./LZMADecoder";
 import fs from "fs/promises"
 import {BinaryReader} from "./BinaryReader";
-import {BSON, EJSON} from "bson"
+import {BSON, EJSON} from 'bson-fork';
 import {CoderPropID, LZMAEncoder} from "./LZMAEncoder";
 import {BinaryWriter} from "./BinaryWriter";
 import {Decompress} from "./7zbson";
