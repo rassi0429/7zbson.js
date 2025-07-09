@@ -9,7 +9,7 @@ compress is WIP
 import { Decompress } from "7zbson.js";
 import fs from "fs/promises";
 
-const data = fs.readFile("file.7zbson");
+const data = await fs.readFile("file.7zbson");
 const biteArray = new Uint8Array(data);
 const decompress = Decompress(biteArray);
 
